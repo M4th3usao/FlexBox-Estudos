@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align itens</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .itens{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .itens{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>center</p>
+    <section class="container center">
+        <div class="itens">item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet</div>
+        <div class="itens">item 3 mais algum texto. Sucesso!</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="itens">item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet. O sucesso é união entre motivação e trabalho.</div>
+        <div class="itens">item 3 mais algum texto</div>
+    </section>
+    
+    <p>Flex start</p>
+    <section class="container flex-start">
+        <div class="itens">item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet</div>
+        <div class="itens">item 3 mais algum texto. O sucesso é união entre motivação e trabalho</div>
+    </section>
+
+    <p>Flex end</p>
+    <section class="container flex-end">
+        <div class="itens">item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet</div>
+        <div class="itens">item 3 mais algum texto. O sucesso é união entre motivação e trabalho</div>
+    </section>
+
+    <p>Baseline</p>
+    <section class="container baseline">
+        <div class="itens"><br>item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet</div>
+        <div class="itens">item 3 mais algum texto. O sucesso é união entre motivação e trabalho</div>
+    </section>
+
+    <h1>column</h1>
+
+    <p>Flex start(column)</p>
+    <section class="container flex-start column">
+        <div class="itens">item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet</div>
+        <div class="itens">item 3 mais algum texto. O sucesso é união entre motivação e trabalho</div>
+    </section>
+
+    <p>Flex end(column)</p>
+    <section class="container flex-end column">
+        <div class="itens">item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet</div>
+        <div class="itens">item 3 mais algum texto. O sucesso é união entre motivação e trabalho</div>
+    </section>
+
+    <p>center(column)</p>
+    <section class="container center column">
+        <div class="itens">item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet</div>
+        <div class="itens">item 3 mais algum texto. Sucesso!</div>
+    </section>
+
+    <p>Baseline(column)</p>
+    <section class="container baseline column">
+        <div class="itens"><br>item 1</div>
+        <div class="itens">Lorem ipsum dolar sit amet</div>
+        <div class="itens">item 3 mais algum texto. O sucesso é união entre motivação e trabalho</div>
+    </section>
+
+    <p>Alinhamento Central à tela</p>
+    <section class="container central center">
+        <div class="itens">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </section>
+</body>
+</html>

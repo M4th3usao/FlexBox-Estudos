@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black
+        }
+        .itens{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .around{
+            align-content: space-around;
+        }
+        .between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p><!-- O stretch já vem na configuração padrão, ele não possuí diferença entre o content-->
+    <div class="container stretch">
+        <div class="itens">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="itens">If you are going to use a passage of Lorem Ipsum</div>
+        <div class="itens">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</div>
+        <div class="itens">or non-characteristic words etc.</div>
+        <div class="itens">arious versions have evolved over the years, sometimes by accident</div>
+        <div class="itens">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+        <div class="itens"> Lorem Ipsum is not simply random text</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="itens">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="itens">If you are going to use a passage of Lorem Ipsum</div>
+        <div class="itens">The point of using Lorem Ipsum is that it  of letters</div>
+        <div class="itens">or non-characteristic words etc.</div>
+        <div class="itens">arious versions have evolved over the years, sometimes by accident</div>
+        <div class="itens">Lorem Ipsum has been the industry's standard</div>
+        <div class="itens"> Lorem Ipsum is not simply random text</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="itens">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="itens">If you are going to use a passage of Lorem Ipsum</div>
+        <div class="itens">The point of using Lorem Ipsum is that it  of letters</div>
+        <div class="itens">or non-characteristic words etc.</div>
+        <div class="itens">arious versions have evolved over the years, sometimes by accident</div>
+        <div class="itens">Lorem Ipsum has been the industry's standard</div>
+        <div class="itens"> Lorem Ipsum is not simply random text</div>
+    </div>
+
+    <p>flex end</p>
+    <div class="container flex-end">
+        <div class="itens">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="itens">If you are going to use a passage of Lorem Ipsum</div>
+        <div class="itens">The point of using Lorem Ipsum is that it  of letters</div>
+        <div class="itens">or non-characteristic words etc.</div>
+        <div class="itens">arious versions have evolved over the years, sometimes by accident</div>
+        <div class="itens">Lorem Ipsum has been the industry's standard</div>
+        <div class="itens"> Lorem Ipsum is not simply random text</div>
+    </div>
+
+    <p>space around</p>
+    <div class="container around">
+        <div class="itens">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="itens">If you are going to use a passage of Lorem Ipsum</div>
+        <div class="itens">The point of using Lorem Ipsum is that it  of letters</div>
+        <div class="itens">or non-characteristic words etc.</div>
+        <div class="itens">arious versions have evolved over the years, sometimes by accident</div>
+        <div class="itens">Lorem Ipsum has been the industry's standard</div>
+        <div class="itens"> Lorem Ipsum is not simply random text</div>
+    </div>
+
+    <p>space between</p>
+    <div class="container between">
+        <div class="itens">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="itens">If you are going to use a passage of Lorem Ipsum</div>
+        <div class="itens">The point of using Lorem Ipsum is that it  of letters</div>
+        <div class="itens">or non-characteristic words etc.</div>
+        <div class="itens">arious versions have evolved over the years, sometimes by accident</div>
+        <div class="itens">Lorem Ipsum has been the industry's standard</div>
+        <div class="itens"> Lorem Ipsum is not simply random text</div>
+    </div>
+</body>
+</html>
